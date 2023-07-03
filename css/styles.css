@@ -1,0 +1,626 @@
+/*   
+Author:  Sally Shue Yan Pang
+Date:   15 May 2023
+File Name: styles.css     
+*/  
+
+body, header, nav, main, footer, h1, div,  img, ul {   
+	margin: 0;  
+	padding: 0;
+	border: 0;    
+}
+
+body {   
+    background-color: orange;   /* Set the background colour */
+}   
+
+header {   
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    font-size: x-large;
+}
+
+
+/* Style rules for mobile viewport */ 
+header {
+	top: 0;
+	background-color: orange;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+    font-size: initial;
+    padding-bottom: 3%;
+}
+
+.accordion-arrow {
+    transform: rotate(90deg);
+}
+
+.accordion-expanded .accordion-arrow {
+    transform: rotate(0deg);
+}
+
+.accordion-line {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+  }
+
+
+/* Style rules for hamburger menu */
+.mobile-nav a.menu-icon{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+}
+
+nav {
+    font-family:  sans-serif;
+    padding: 1%; 
+    margin-bottom: 1%;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li { 
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top: 1px solid #fff;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    border-radius: 10px; 
+}
+
+nav li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* Show mobile class, hide tablet-desktop class */ 
+.mobile {
+    display: block; 
+}
+    
+.tablet-desktop, #menu-links {
+	display: none;
+}
+
+nav li:last-child a { /*remove from last item*/
+    border:none;
+}
+
+nav:after { /*float clearing*/
+    content: '';
+    clear:left;
+    display:block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px; 
+}
+
+main {
+    clear:left;
+    background-color: #fff; 
+    padding: 2%; 
+    font-size: 1.25em;
+    font-family: sans-serif;
+}
+
+.mobile h3 {
+	text-shadow: 5px 5px 8px #ccc;  
+}	
+
+.hours {
+    margin-left: 10%;
+}
+
+.tel-link {
+    background-color: #404040; padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px; 
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none; 
+    font-size: 1.5em; 
+    display: block;
+}
+
+#form {
+    margin-top: 2%;
+    background-color: #f2f2f2;
+    padding: 2%; 
+}
+
+#form h2 {
+    text-align: center;
+}
+    
+/* Style rules for form elements */ 
+fieldset, input, select, textarea {
+    margin-bottom: 2%; 
+}
+    
+fieldset legend { font-weight: bold;
+    font-size: 1.25em; 
+}
+    
+label {
+    display: block;
+    padding-top: 3%; 
+}
+    
+form #submit, form #clear {
+    margin: 0;
+    border: none;
+    display: inline-block;
+    padding: 2%;
+    background-color: #b3b3b3;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+footer p { 
+    font-size: 0.75em; 
+    text-align: center; 
+    color: #fff; 
+    padding: 0 1em; 
+    font-family: sans-serif;
+} 
+   
+footer p a {
+    color: #fff;  /* Sets the link colour */
+    text-decoration: none;
+    font-family: sans-serif;
+}  
+
+
+#questions {
+    width: 98%;
+}
+
+#appoinment {
+    text-align: center;
+}
+
+#form h2 a{
+    background-color: chocolate;
+    text-decoration: none;
+    color: black;
+}
+
+.action {   
+    font-size: 1.35em;    
+    color: #666600;    
+    font-weight: bold;  
+}    
+
+#resources {
+	clear: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+}
+
+
+.image-container {
+    position: relative;
+    padding-block: 5%;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.image-overlay h3 {
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.image-overlay ul {
+    padding: 5%;
+}
+
+.image-overlay li {
+    margin-bottom: 10px;
+}
+
+.round{
+    border-radius: 8px;
+}
+
+#announcement p a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: chocolate;
+    text-decoration: none;
+    color: black;
+}
+
+#first h1{
+    padding-right: 20%;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+#first {
+    position: relative;
+  }
+  
+
+#first .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#car, #truck, #WD, #SUV ul li{   
+    font-size: 1.2rem;
+} 
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) { 
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */ 
+	.tablet-desktop{
+		display: block;   
+	}
+
+    .tablet-desktop #tablet{
+		display: block;   
+	}
+
+    .tablet-desktop #desktop{
+        display: none;   
+    }
+
+	.mobile, mobile-nav, .mobile-nav a.menu-icon{   
+		display: none;   
+	}
+   
+    header {
+        position: static;
+        padding-bottom: 1%; 
+    }
+
+     /* Tablet Viewport: Style rules for nav area */
+	nav li {  
+		border-top: none;
+		display: inline-block; 
+	}
+
+    nav ul li a:hover {
+        background-color: white;
+    }    
+	
+	nav li:last-child {
+		border-right: none;
+	}
+	
+	nav li a {
+		padding: 0.5em 0.5em;	
+        display:block;
+	}
+    /* Tablet Viewport: Style rule for form element */ 
+    form {
+        width: 70%;
+        margin: 0 auto; 
+    }
+
+    #car, #truck, #WD, #SUV ul li{   
+        font-size: 1.3rem;
+    } 
+    
+    #car, #truck, #WD, #SUV{   
+        font-size: large;
+    }  
+
+    #announcement h1{
+        text-align: center;
+    }
+    
+    #announcement ul{
+        margin: auto;
+        width: 640px; 
+    }
+    
+    #announcement h3 a{
+        text-align: center;
+        background-color: chocolate;
+        text-decoration: none;
+        color: black;
+    }
+
+    #announcement p a{
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin:0 38%;
+        background-color: chocolate;
+        text-decoration: none;
+        color: white;
+    }
+
+    .image-overlay {
+        width: auto;
+        display: flex;  
+    }
+
+    .image-overlay h3 {
+        padding: 10%;
+    }
+
+    #first .overlay .content {
+        padding-right: 40%;
+        margin-left: 5%;
+        font-family: sans-serif;
+    }
+
+    #first .overlay .content .title {
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    
+    #profile {
+        position: relative;
+    }
+    
+    #profile img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #profile > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #operation, #contact {
+        font-size: 0.6em;
+    }
+
+    #operation {
+        margin-left: 10%;
+        font-family: sans-serif;
+        padding-top: 3%;
+    }
+    
+    #contact {
+        padding-left: 10%;
+        padding-top: 3.8%;
+        font-family: sans-serif;
+    }
+
+    #maintenance, #repair, #service, #inspection {
+        width: auto;
+    }
+      
+}
+
+/* Media Query for Desktop Viewport */ 
+@media screen and (min-width: 1015px) {
+/* Desktop Viewport: Style rule for header */ 
+    header {   
+        margin-top: 2%;
+        margin-bottom: 1%;
+        text-align: center;
+        font-family: "Gill Sans", sans-serif;
+        font-size: x-large; 
+        }   
+
+    .tablet-desktop #tablet{
+        display: none;   
+    }
+
+    .tablet-desktop #desktop{
+        display: block;   
+    }
+
+    /* Desktop Viewport: Style rules for nav area */ 
+    nav {
+        font-family:  sans-serif;
+        text-align: center;
+        }
+
+    nav li { 
+        display: inline-block;
+        font-size: 1.9em;
+        font-weight: bold;
+        }
+        
+    nav li a{
+        display: block;
+        color: black;
+        text-align: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        text-decoration: none;
+        font-family: sans-serif;
+        }
+
+    nav:after { /*float clearing*/
+        content: '';
+        clear:left;
+        display:block;
+        }
+
+    main h1 {
+        font-size: 1.8em;
+        }
+
+
+    #car, #truck, #WD, #SUV{   
+        width: 45%;   
+        float: left;   
+        padding-left: 3.3%;
+    }    
+    
+    /* Desktop Viewport: Style rules for form elements */ 
+    form {
+        width: auto; 
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 20px; 
+    }
+    
+    .btn {
+        grid-column: 1 / span 2; /* Set the button to span two columns */
+    }
+
+    #announcement h1{
+        text-align: center;
+    }
+    
+    #announcement ul{
+        margin: auto;
+        width: 640px; 
+    }
+    
+    #announcement h3 a{
+        text-align: center;
+        background-color: chocolate;
+        text-decoration: none;
+        color: black;
+    }
+
+    #announcement p a{
+        font-size: xx-large;
+        margin:0 30%;
+        color: black;
+    }
+
+    .image-overlay h3 {
+        padding: 5%;
+    }
+    
+    .accordion-content {
+        font-size: 1.20rem;
+    }
+
+    #safety, #money, #performance, #resale{   
+        float: left;
+        padding: 2%;
+        width: 45%;
+    }
+
+    #first .overlay .content .title {
+        font-size: xx-large;
+    }
+
+
+    #profile {
+        position: relative;
+    }
+    
+    #profile img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #profile > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+
+    }
+    
+    #operation, #contact {
+        font-size: 1.15em;
+    }
+    
+    #contact a {
+        text-decoration: none;
+        color: #0000FF;
+    }
+
+    #first .overlay .content {
+        font-size: x-large;
+    }
+
+    #maintenance, #repair, #service, #inspection{   
+        float: left;   
+        margin: 0 2.5%; 
+        width: 45%;
+    }
+
+    #operation {
+        float: left;
+        margin-top: 11%;        
+
+    }
+
+    #contact {
+        float: right;
+        margin-top: 10%;
+    }
+
+      
+      
+
+}
+
+
+

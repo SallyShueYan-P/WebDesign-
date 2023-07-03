@@ -1,0 +1,113 @@
+<!doctype html>
+<!-- This website template was created by: Sally Shue Yan Pang -->
+<html lang="en">
+
+<head>
+    <title>AutoKing Car Repairs</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">   
+    <script src="Form/script.js"></script> <!-- Link JavaScript to HTML -->
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- Use the header area for the website name or logo -->
+        <header>
+            <a href="index.html" style="text-decoration-line: none;color: black;"><h1>AutoKing Car Repairs</h1></a>
+        </header>
+
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="appointment.html">Appointment</a></li>
+                <li><a href="announcement.html">Announcement</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="maintenance.html">Maintenance</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+
+        <p></p> 
+
+        <main>
+            <div id="appoinment">
+                <h1>BOOK AN APPOINTMENT</h1>
+                <p>Don't waste any more time waiting by booking an appointment with AutoKing Car Repairs today!</p>
+                <p class="tablet-desktop">Don't miss out on any deals we have today! 
+            </div>
+            
+            <div id="form">
+                <h2><a>Complete the form below to schedule your appointment.</a></h2> 
+                <form class="form-grid" name="myForm" method= "POST" action="Form/submitted.html" onsubmit="return validateForm()"> 
+                    <!-- Start Form -->
+                    <fieldset>
+                        <legend>Customer Information</legend> 
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName">
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName"> 
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <label for="phone">Phone: </label>
+                        <input type="tel" id="phone" name= "phone">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend> <p>I would like more information about:</p>
+                        <label for="grpfit"><input type="checkbox" name="interest" id="grpfit" value="Group Fitness">Oil Change</label>
+                        <label for="prtrain"><input type="checkbox" name="interest" id="prtrain" value="Personal Training">Tire Rotation</label>
+                        <label for="nutr"><input type="checkbox" name="interest" id="nutr" value="Nutrition">Brake Service</label> 
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Vehicle Information</legend>
+                        <label for="model">Model:</label>
+                        <input type="text" name="model" id="model">
+                        <label for="year">Year:</label>
+                        <select name="year" id="year">
+                            <option value="earlier">before 2000</option>
+                            <option value="first">2000-2010</option>
+                            <option value="second">2011-2020</option>
+                            <option value="third">2021-2023</option>   
+                        </select>
+                        <label for="lPlateNum">License Plate Number:</label>
+                        <input type="tel" name="lPlateNum" id="lPlateNum">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Date and Time</legend>
+                        <label for="date">Date (dd-mm-yyyy):</label>
+                        <input type="tel" name="date" id="date">
+
+                        <label for="availability">Preferred Session:</label>
+                        <select name="availability" id="availability">
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>   
+                        </select>
+                        <label for="questions"> Additional Notes:</label>
+                        <textarea id="questions"  name="questions" rows="5" cols="35"></textarea>		
+                    </fieldset>
+
+                    <fieldset style="  grid-column: 1 / span 2;">
+                        <div style="text-align: center;">
+                            <input type="submit" id="submit" value ="Submit" class="btn">
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="reset" id="clear" value="Clear" class="btn">
+                        </div>
+                    </fieldset>
+                </form> 
+            </div>
+        </main>
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer><br>
+            <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            <p><a href="mailto:autokingcarrepairs@autokingmail.com.au">autokingcarrepairs@autokingmail.com.au</a></p>
+        </footer>
+    </div>
+</body> 
+</html>
